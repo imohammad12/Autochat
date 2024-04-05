@@ -1,0 +1,16 @@
+beautifulsoup4==4.12.3
+clean-text
+gradio==4.21.0
+langchain==0.1.12
+langchain_community==0.0.28
+langchain_core==0.1.31
+langchain_openai==0.0.8
+langchain_text_splitters==0.0.1
+nltk==3.8
+numpy
+scipy
+torch==2
+tqdm==4.66.2
+transformers==4.38.2
+lxml
+faiss-cpu

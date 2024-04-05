@@ -1,0 +1,43 @@
+{
+  "pages_dir": "./data/pages/",
+  "embedding_type": "openai",
+  "deduplication_threshold": 0.9,
+  "embedding_model_name": "text-embedding-3-large",
+  "embedding_openai_key": "",
+  "encode_kwargs": {
+    "normalize_embeddings": false
+  },
+  "show_progress": true,
+  "splitters_configs": [
+    {
+      "type": "html_splitter",
+      "min_words_drop": 8,
+      "do_clean": false,
+      "parent_text_splitter_kwargs": {
+        "headers_to_split_on": [
+          [
+            "h1",
+            "Header 1"
+          ],
+          [
+            "h2",
+            "Header 2"
+          ],
+          [
+            "h3",
+            "Header 3"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "recursive_char_splitter",
+      "min_words_drop": 8,
+      "do_clean": true,
+      "parent_text_splitter_kwargs": {
+        "chunk_size": 1000,
+        "chunk_overlap": 200
+      }
+    }
+  ]
+}

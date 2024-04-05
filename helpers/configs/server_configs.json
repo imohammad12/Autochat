@@ -1,0 +1,12 @@
+{
+  "openai_key": "",
+  "chat_llm": "gpt-3.5-turbo-0125",
+  "num_retrieved_chunks": 20,
+  "vector_db_path": "./data/vector_db",
+  "agen_executor_kwarg": {
+    "verbose": true,
+    "return_intermediate_steps": true
+  },
+  "embedding_type": "openai",
+  "embedding_model_name": "text-embedding-3-large"
+}
